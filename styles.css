@@ -1,0 +1,52 @@
+header{
+    
+    background-image: url(assets/wesley-tingey-ZdOW9Qd8mQo-unsplash\ copy.jpg);
+    
+}
+img{
+   
+    border-radius: 15%;
+    border: 3px solid #604F83;
+    margin: 10px;
+}    
+main{
+    height: 1000px;
+}    
+ 
+
+.title{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.intro{
+    max-width: 500px;
+    text-align: left;
+}
+body {
+    background-color: #FAF9F8;
+    height: 500px;
+}
+.aboutMeSection{
+    
+    color: #604F83;
+    font-style: italic;
+}
+footer{
+    background-color: #BDA5BC;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.centered{
+}
+a{
+    color: #604F83;
+}
+
+section {
+    margin-top:  5px;
+    margin-bottom: 5px;
+}
