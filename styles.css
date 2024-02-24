@@ -1,12 +1,13 @@
 header{
     
-    background-image: url(assets/wesley-tingey-ZdOW9Qd8mQo-unsplash\ copy.jpg);
-    
+    background: url(assets/floral_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 img{
    
-    border-radius: 15%;
-    border: 3px solid #604F83;
+    border-radius: 50%;
+    border: 3px solid #846E6A;
     margin: 10px;
 }    
 main{
@@ -16,24 +17,31 @@ main{
 
 .title{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    height: 275px;
 }
 .intro{
-    max-width: 500px;
+    max-width: 275px;
     text-align: left;
+    margin-left: 10px;
 }
 body {
     background-color: #FAF9F8;
     height: 500px;
 }
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 .aboutMeSection{
     
-    color: #604F83;
-    font-style: italic;
+    color: black;
 }
 footer{
-    background-color: #BDA5BC;
+    background-color: #DFC8C2;
     height: 100px;
     display: flex;
     justify-content: center;
@@ -43,10 +51,11 @@ footer{
 .centered{
 }
 a{
-    color: #604F83;
+    color: #846E6A;
 }
 
 section {
     margin-top:  5px;
     margin-bottom: 5px;
+    padding: 0px 10px 0px 10px;
 }
