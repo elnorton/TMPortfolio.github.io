@@ -6,16 +6,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="img" href="assets/icons8-butterfly-96.png">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/19caf0e029.js" crossorigin="anonymous"></script>
     <title>Ericka</title>
-    <style>
-        body{
-            
-        }
-    </style>
 </head>
-
 <body>
-    <header id="header" class="title">
+    <div id="header">
+        <video id="background-video" autoplay loop muted ="assets/PortfolioBanner.mp4">
+            <source src="assets/PortfolioBanner.mp4" type="video/mp4">
+          </video>
+        <div class="container">
+            <nav>
+                <img src="assets/InitialsNameLogo.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+             </nav>
+             <div class="header-text">
+                <p>Small Business Owner</p>
+                <h1>Yá' át'ééh World, I am <span>Ericka.</span><br>I am exploring additional<br> opportunities in the tech world.</h1>
+             </div>           
+        </div>
+    </div>
+<!--------------------about------------------------------>    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/IMG_0235.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        My creativity makes me unique through analysis and problem solving and the satisfaction that comes from completing a task.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>html</span><br>Organizing a web page structure.</li>
+                            <li><span>CSS</span><br>Designing a web page with detailed features.</li>
+                            <li><span>Javascript</span><br>Coding and electical programming.</li>
+                            <li><span>Creativity</span><br>Designing and creating products.</li>
+                            <li><span>Social Media Marketing</span><br>Creating finished product content to share with virtual viewers.</li>
+                            <li><span>Analytics</span><br>Analyzing data and statistics to determine changes or updates.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023-Current</span><br>Small Businees Owner</li>
+                            <li><span>2014-2016</span><br>Change Management Process Tech</li>
+                            <li><span>2006-2014</span><br>Manufacturing Tech</li>
+                            <li><span>2000-2006</span><br>Test Operator</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>Tech-Mom Lehi Cohort</li>
+                            <li><span>2021-2023</span><br>USU Bachelor of Science in Technology Systems</li>
+                            <li><span>2017-2020</span><br>SLCC Associate of Science in Business</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+<!------------portfoliio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="assets/Work1.png">
+                <div class="layer">
+                    <h3>Social Media Marketing Manager</h3>
+                    <p>Cataloging finished products to sell online and promoting products on social media.</p>
+                    <a href="#"><i class=""></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/Work2.png">
+                <div class="layer">
+                    <h3>Small Business Owner</h3>
+                    <p>Manage and operate a small business. Creating handmade beaded jewerly.</p>
+                    <a href="#"><i class=""></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/Work3.png">
+                <div class="layer">
+                    <h3>Front End Dev</h3>
+                    <p>Designing responsive portfolifolio with HTML, CSS, and Javascript.</p>
+                    <a href="#"><i class=""></i></a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!------------contact------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h class="sub-title">Contact Me</h>
+                <p><i class="fa-regular fa-envelope"></i>ericka.norton@outlook.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/ericka-norton"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/sparklebeadweaver?igsh=OGhuaXZobnFieDR3&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://sparklebeadweaver.etsy.com"><i class="fa-brands fa-etsy"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<Script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</Script>
+
+
+</body>
+</html>
+
+
+
+    <!--<header id="header" class="title">
         <img src="assets/IMG_5190.jpeg" alt="Headshot of me" width="270">
         <div class="intro">
             <h1>Ericka Norton </h1>
@@ -30,43 +178,16 @@
 
     </header>
         <div class="navbar">
-            <a href="About_Me.html">About Me</a>
-            <a>Skills</a>
-            <a>WorkExperience</a>
-            <a>Links</a>
+            <a href="index.html">Home</a>
+            <a href="About_Me.html">About</a>
+            <a href="Skills.html">Skills</a>
+            <a href="Work_Experience.html">WorkExperience</a>
+            <a href="Links.html">Links</a>
         </div>
     <main>
         
 
-        <section class="skills" style="border: solid 2px #846E6A">
-            <h2>Skills</h2>
-            <p></p>
-            <h3>I have experience with</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Organization</li>
-
-            </ul>
-
-            <!-- <ol>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Organization</li>
-            </ol> -->
-        </section>
-
-        <section class="workExperience" style="border: solid 2px #846E6A">
-            <h2>Work Experience</h2>
-
-<p>Change Management Process Technician</p>
-<p>Assisted and supported engineers with tactical task, making changes and updates to upper/lower limits and target values, creating new setups, analyzing data for fault detection program and Run2Run program. Attended onsite implementation meetings and communicated strategic changes with engineers, area managers, equipment owners and process owners.Assisted and supported engineers with tactical task, making changes and updates to upper/lower limits and target values, creating new setups, analyzing data for fault detection program and Run2Run program. Attended onsite implementation meetings and communicated strategic changes with engineers, area managers, equipment owners and process owners.</p>
-<p>Manufacturing Technician</p>
-<p>Administered ownership of the workstation and operated at maximum capacity. Monitored tool efficiency and performance with SPC data, troubleshooting tool errors, and product issues. Trained 20+ local and global employees, preparing them for startup companies in Singapore, Taiwan, and Japan.Administered ownership of the workstation and operated at maximum capacity. Monitored tool efficiency and performance with SPC data, troubleshooting tool errors, and product issues. Trained 20+ local and global employees, preparing them for startup companies in Singapore, Taiwan, and Japan.</p>
-<p>Test OperatorTest Operator</p>
-<p>Tested memory chips with testing tools. Maintained tool operation at a high-level capacity. Communicated clearly and professionally with counter partner on any high-priority tools and products ensuring a clear understanding of workflow.</p>
-           
-        </section>
+        
 
 
 
